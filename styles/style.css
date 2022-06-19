@@ -212,8 +212,61 @@
   font-weight: normal;
 }
 
+.digits{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.table {
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.table_digits{
+margin-bottom: 100px;
+
+}
+.table__cell {
+  width: 250px;
+  margin-top: 60px;
+}
+.table__heading {
+/* margin: 0; */
+margin-top: 0;
+margin-bottom: 20px;
+/* Параметры шрифта */
+line-height: 1.15;
+font-size: 24px;
+font-weight: semibold;
+
+
+}
+.table__text {
+  margin: 0;
+  margin-bottom: 20px;
+/* Параметры шрифта */
+line-height: 1.2;
+font-size: 18px;
+font-weight: normal;
+
+}
+
 .top-space {
   margin-top: 100px;
+}
+
+.top-space_kaufman {
+  margin: 0%;
+  padding-top: 100px;
+}
+
+
+.top-space_digits {
+  margin-top: 40px;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -223,9 +276,72 @@
 } */
 
 /* и элемента с модификатором вида ключ-значение */
+
+
+
+.kaufman {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: #1d1d1d;
+}
+
+.section-title_dark-theme {
+  color: white;
+}
+
+.section-subtitle_dark-theme {
+  color: white;
+}
+
+.table_theme_dark{
+  margin-bottom: 90px;
+}
+
 .table__cell_theme_dark {
   width: 200px;
   color: white;
   margin-right: 0;
   margin-top: 80px;
+}
+
+.table__text_theme_dark{
+
+  margin: 0;
+}
+
+.resources {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resources-box {
+  margin: 80px auto 217px;
+  display: flex;
+  flex-direction: row;
+
+
+}
+
+.resources__logo-zone {
+  width: 270px;
+  height: 38px;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.resources__logo-zone_logo_arzamas {
+ background-image: url("../images/logo/resources-arzamas.svg");
+}
+.resources__logo-zone_logo_n1 {
+background-image: url("../images/logo/resources-n1.svg");
+}
+.resources__logo-zone_logo_strelka {
+background-image: url("../images/logo/resources-strelka.svg");
+}
+.resources__logo-zone_logo_polka {
+background-image: url("../images/logo/resources-polka.svg");
 }
