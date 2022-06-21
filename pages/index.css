@@ -1,3 +1,9 @@
+/* Основные цвета в макете:
+серый фон #1f1f1f
+серый фон #f2f2f2
+синий (ссылки, фигуры) #2f80ed
+Черный текст #000000 */
+
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts.css);
 @import url(../blocks/root/root.css);
@@ -22,11 +28,16 @@
 @import url(../blocks/two-colums/__paragraph/two-colums__paragraph.css);
 @import url(../blocks/two-colums/__span-accent/two-colums__span-accent.css);
 
-/* Основные цвета в макете:
-серый фон #1f1f1f
-серый фон #f2f2f2
-синий (ссылки, фигуры) #2f80ed
-Черный текст #000000 */
+/* section title & subtitle */
+@import url(../blocks/section-title/section-title.css);
+@import url(../blocks/section-subtitle/section-subtitle.css);
+
+/* .cards */
+@import url(../blocks/cards/cards.css);
+@import url(../blocks/cards/__description/cards__description.css);
+@import url(../blocks/cards/__image/cards__image.css);
+@import url(../blocks/cards/__item/cards__item.css);
+@import url(../blocks/cards/__title/cards__title.css);
 
 /* Оставил только те классы, которые задают непосредственную структуру >>ЭТОЙ<< страницы */
 .page {
@@ -44,6 +55,18 @@
   justify-content: center;
 }
 
+.digits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resources {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .techniques {
   width: 80%;
   margin: 0 auto;
@@ -52,72 +75,13 @@
   flex-direction: column;
   align-items: center;
 }
-.section-title {
-  margin-top: 0;
-  margin-bottom: 20px;
-  width: 60%;
-  text-align: center;
-  line-height: 1.15;
-  font-size: 60px;
-  font-weight: semibold;
-}
-.section-subtitle {
-  margin: 0;
-  width: 60%;
-  text-align: center;
 
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
-}
-.cards {
-  width: 920px;
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  align-content: flex-start;
-}
-.cards__item {
-  width: 240px;
+.kaufman {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 100px;
-  text-align: center;
-}
 
-.cards__item_no-margin {
-  margin-right: 0;
-}
-
-.cards__image {
-  width: 160px;
-  height: 160px;
-  border-radius: 80px;
-  margin: 60px 40px 43px;
-}
-.cards__title {
-  margin: 0;
-  margin-bottom: 16px;
-
-  line-height: 1.15;
-  font-size: 24px;
-  font-weight: normal;
-}
-.cards__description {
-  margin: 0;
-  margin-bottom: 60px;
-
-  line-height: 23px;
-  font-size: 18px;
-  font-weight: normal;
-}
-
-.digits {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background-color: #1d1d1d;
 }
 
 .table {
@@ -174,14 +138,6 @@
 
 /* и элемента с модификатором вида ключ-значение */
 
-.kaufman {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  background-color: #1d1d1d;
-}
-
 .section-title_dark-theme {
   color: white;
 }
@@ -203,12 +159,6 @@
 
 .table__text_theme_dark {
   margin: 0;
-}
-
-.resources {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .resources-box {
