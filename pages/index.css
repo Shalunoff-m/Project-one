@@ -10,21 +10,25 @@
 @import url(../blocks/header/__subtitle/header__subtitle.css);
 @import url(../blocks/header/__title/header__title.css);
 @import url(../blocks/header/__main-illustration/header__main-illustration.css);
+
+/* Logo block */
+@import url(../blocks/logo/logo.css);
+@import url(../blocks/logo/_place/logo_place_header.css);
+
+/* .two-colums */
+@import url(../blocks/two-colums/two-colums.css);
+@import url(../blocks/two-colums/__brief/two-colums__brief.css);
+@import url(../blocks/two-colums/__main-text/two-colums__main-text.css);
+@import url(../blocks/two-colums/__paragraph/two-colums__paragraph.css);
+@import url(../blocks/two-colums/__span-accent/two-colums__span-accent.css);
+
 /* Основные цвета в макете:
 серый фон #1f1f1f
 серый фон #f2f2f2
 синий (ссылки, фигуры) #2f80ed
 Черный текст #000000 */
 
-.show {
-  border: 2px solid #1476e6;
-}
-
-.nospace {
-  margin: 0;
-  padding: 0;
-}
-
+/* Оставил только те классы, которые задают непосредственную структуру >>ЭТОЙ<< страницы */
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -33,56 +37,11 @@
   /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: "inter", Arial, sans-serif;
-  color: #000000;
-}
-
-.logo {
-  width: 228px;
-  height: 32px;
-  background-repeat: none;
-  background-position: center center;
-}
-.logo_place_header {
-  background-image: url("../images/logo_place_header.svg");
-  margin-top: 30px;
-  margin-left: 64px;
 }
 
 .description {
   display: flex;
   justify-content: center;
-}
-.two-colums {
-  width: 80%;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-.two-colums__brief {
-  display: block;
-  width: 175px;
-  margin: 0;
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
-  color: #2f80ed;
-}
-.two-colums__main-text {
-  min-width: 784px;
-  width: 80%;
-}
-.two-colums__paragraph {
-  margin: 0;
-  margin-bottom: 30px;
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
-}
-.two-colums__span-accent {
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: bold;
 }
 
 .techniques {
@@ -155,7 +114,7 @@
   font-weight: normal;
 }
 
-.digits{
+.digits {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -169,33 +128,29 @@
   align-items: flex-start;
 }
 
-.table_digits{
-margin-bottom: 100px;
-
+.table_digits {
+  margin-bottom: 100px;
 }
 .table__cell {
   width: 250px;
   margin-top: 60px;
 }
 .table__heading {
-/* margin: 0; */
-margin-top: 0;
-margin-bottom: 20px;
-/* Параметры шрифта */
-line-height: 1.15;
-font-size: 24px;
-font-weight: semibold;
-
-
+  /* margin: 0; */
+  margin-top: 0;
+  margin-bottom: 20px;
+  /* Параметры шрифта */
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: semibold;
 }
 .table__text {
   margin: 0;
   margin-bottom: 20px;
-/* Параметры шрифта */
-line-height: 1.2;
-font-size: 18px;
-font-weight: normal;
-
+  /* Параметры шрифта */
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
 }
 
 .top-space {
@@ -206,7 +161,6 @@ font-weight: normal;
   margin: 0%;
   padding-top: 100px;
 }
-
 
 .top-space_digits {
   margin-top: 40px;
@@ -219,8 +173,6 @@ font-weight: normal;
 } */
 
 /* и элемента с модификатором вида ключ-значение */
-
-
 
 .kaufman {
   display: flex;
@@ -238,7 +190,7 @@ font-weight: normal;
   color: white;
 }
 
-.table_theme_dark{
+.table_theme_dark {
   margin-bottom: 90px;
 }
 
@@ -249,8 +201,7 @@ font-weight: normal;
   margin-top: 80px;
 }
 
-.table__text_theme_dark{
-
+.table__text_theme_dark {
   margin: 0;
 }
 
@@ -264,8 +215,6 @@ font-weight: normal;
   margin: 80px auto 217px;
   display: flex;
   flex-direction: row;
-
-
 }
 
 .resources__logo-zone {
@@ -277,14 +226,14 @@ font-weight: normal;
 }
 
 .resources__logo-zone_logo_arzamas {
- background-image: url("../images/logo/resources-arzamas.svg");
+  background-image: url("../images/logo/resources-arzamas.svg");
 }
 .resources__logo-zone_logo_n1 {
-background-image: url("../images/logo/resources-n1.svg");
+  background-image: url("../images/logo/resources-n1.svg");
 }
 .resources__logo-zone_logo_strelka {
-background-image: url("../images/logo/resources-strelka.svg");
+  background-image: url("../images/logo/resources-strelka.svg");
 }
 .resources__logo-zone_logo_polka {
-background-image: url("../images/logo/resources-polka.svg");
+  background-image: url("../images/logo/resources-polka.svg");
 }
