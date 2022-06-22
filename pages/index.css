@@ -34,13 +34,30 @@
 @import url(../blocks/section-title/_theme/section-title_theme_dark.css);
 @import url(../blocks/section-subtitle/_theme/section-subtitle_theme_dark.css);
 
-
 /* .cards */
 @import url(../blocks/cards/cards.css);
 @import url(../blocks/cards/__description/cards__description.css);
 @import url(../blocks/cards/__image/cards__image.css);
 @import url(../blocks/cards/__item/cards__item.css);
 @import url(../blocks/cards/__title/cards__title.css);
+
+/* table */
+@import url(../blocks/table/table.css);
+@import url(../blocks/table/_theme/table_theme_dark.css);
+@import url(../blocks/table/__cell/table__cell.css);
+@import url(../blocks/table/__cell/_theme/table__cell_theme_dark.css);
+@import url(../blocks/table/__heading/table__heading.css);
+@import url(../blocks/table/__text/table__text.css);
+
+@import url(../blocks/table/__text/_theme/table__text_theme_dark.css);
+
+/* .resources */
+@import url(../blocks/resources-box/resources-box.css);
+@import url(../blocks/resources-box/__logo-zone/resources-box__logo-zone.css);
+@import url(../blocks/resources-box/__logo-zone/_logo/resources-box__logo-zone_arzamas.css);
+@import url(../blocks/resources-box/__logo-zone/_logo/resources-box__logo-zone_n1.css);
+@import url(../blocks/resources-box/__logo-zone/_logo/resources-box__logo-zone_polka.css);
+@import url(../blocks/resources-box/__logo-zone/_logo/resources-box__logo-zone_strelka.css);
 
 /* Оставил только те классы, которые задают непосредственную структуру >>ЭТОЙ<< страницы */
 .page {
@@ -53,11 +70,49 @@
   /* выше для экранов больше 1600px отцентрировали весь контент */
 }
 
+/* Основное выравнивание блоков на странице */
+.page__header {
+  margin-bottom: 100px;
+}
+
+.content__description {
+  margin-bottom: 100px;
+}
+
+.content__techniques {
+  margin: 0 auto 100px;
+}
+
+.content__kaufman {
+  margin-bottom: 100px;
+}
+
+.content__digits {
+  margin-bottom: 100px;
+}
+.content__resources{
+  margin-bottom: 217px;
+}
+
+/* Внутреннее формирование блоков */
 .description {
   display: flex;
   justify-content: center;
 }
 
+.techniques {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.kaufman {
+  padding: 90px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1d1d1d;
+}
 .digits {
   display: flex;
   flex-direction: column;
@@ -70,69 +125,6 @@
   align-items: center;
 }
 
-.techniques {
-  width: 80%;
-  margin: 0 auto;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.kaufman {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  background-color: #1d1d1d;
-}
-
-.table {
-  max-width: 1100px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: flex-start;
-}
-
-.table_digits {
-  margin-bottom: 100px;
-}
-.table__cell {
-  width: 250px;
-  margin-top: 60px;
-}
-.table__heading {
-  /* margin: 0; */
-  margin-top: 0;
-  margin-bottom: 20px;
-  /* Параметры шрифта */
-  line-height: 1.15;
-  font-size: 24px;
-  font-weight: semibold;
-}
-.table__text {
-  margin: 0;
-  margin-bottom: 20px;
-  /* Параметры шрифта */
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
-}
-
-.top-space {
-  margin-top: 100px;
-}
-
-.top-space_kaufman {
-  margin: 0%;
-  padding-top: 100px;
-}
-
-.top-space_digits {
-  margin-top: 40px;
-}
-
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 /* .header__square-pic {
   height: 568px;
@@ -140,49 +132,3 @@
 } */
 
 /* и элемента с модификатором вида ключ-значение */
-
-
-
-
-
-.table_theme_dark {
-  margin-bottom: 90px;
-}
-
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
-}
-
-.table__text_theme_dark {
-  margin: 0;
-}
-
-.resources-box {
-  margin: 80px auto 217px;
-  display: flex;
-  flex-direction: row;
-}
-
-.resources__logo-zone {
-  width: 270px;
-  height: 38px;
-  background-position: center center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.resources__logo-zone_logo_arzamas {
-  background-image: url("../images/logo/resources-arzamas.svg");
-}
-.resources__logo-zone_logo_n1 {
-  background-image: url("../images/logo/resources-n1.svg");
-}
-.resources__logo-zone_logo_strelka {
-  background-image: url("../images/logo/resources-strelka.svg");
-}
-.resources__logo-zone_logo_polka {
-  background-image: url("../images/logo/resources-polka.svg");
-}
