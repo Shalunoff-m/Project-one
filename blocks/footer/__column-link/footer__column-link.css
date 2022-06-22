@@ -1,0 +1,15 @@
+.footer__column-link {
+  display: block;
+  text-decoration: none;
+  color: rgb(192, 192, 192);
+  display: block;
+  margin-bottom: 10px;
+
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.footer__column-link:hover {
+  color: white;
+}
