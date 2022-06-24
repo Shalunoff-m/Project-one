@@ -4,6 +4,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: flex-start;
+  z-index: 10;
 }
 
 /* .table_digits {

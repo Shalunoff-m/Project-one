@@ -1,9 +1,11 @@
 .footer__column-link {
   display: block;
   text-decoration: none;
-  color: rgb(192, 192, 192);
+  color: white;
   display: block;
   margin-bottom: 10px;
+  opacity: 100%;
+  transition: opacity 0.5s;
 
   line-height: 18px;
   font-size: 18px;
@@ -11,5 +13,5 @@
 }
 
 .footer__column-link:hover {
-  color: white;
+  opacity: 50%;
 }
