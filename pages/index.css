@@ -25,7 +25,6 @@
 
 /* Импорт Video */
 @import url(../blocks/video/__iframes/video__iframes.css);
-@import url(../blocks/video/__iframe/video__iframe.css);
 
 /* Импорт feynman */
 @import url(../blocks/feynman/__link/feynman__link.css);
@@ -86,12 +85,14 @@
 @import url(../blocks/table/__text/_theme/table__text_theme_dark.css);
 
 /* .resources */
-@import url(../blocks/resources-box/resources-box.css);
-@import url(../blocks/resources-box/__logo-zone/resources-box__logo-zone.css);
-@import url(../blocks/resources-box/__logo-zone/_logo/resources-box__logo-zone_arzamas.css);
-@import url(../blocks/resources-box/__logo-zone/_logo/resources-box__logo-zone_n1.css);
-@import url(../blocks/resources-box/__logo-zone/_logo/resources-box__logo-zone_polka.css);
-@import url(../blocks/resources-box/__logo-zone/_logo/resources-box__logo-zone_strelka.css);
+@import url(../blocks/resources/resources.css);
+@import url(../blocks/resources/__link/resources__link.css);
+@import url(../blocks/resources/__link/_logo/resources__link_logo_arzamas.css);
+@import url(../blocks/resources/__link/_logo/resources__link_logo_n1.css);
+@import url(../blocks/resources/__link/_logo/resources__link_logo_polka.css);
+@import url(../blocks/resources/__link/_logo/resources__link_logo_strelka.css);
+@import url(../blocks/resources/__logo-zone/resources__logo-zone.css);
+
 
 /* @import url(../blocks/footer/footer.css); */
 
