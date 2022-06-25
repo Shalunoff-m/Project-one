@@ -1,5 +1,4 @@
 .logo_place_footer {
-  background-image: url("../../../images/logo_place_footer.svg");
-  /* margin-top: 30px; */
-  /* margin-left: 64px; */
+background-image: url("../../../images/logo_place_footer.svg");
+z-index: 10;
 }
