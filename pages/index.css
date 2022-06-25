@@ -8,6 +8,8 @@
 @import url(../vendor/fonts.css);
 @import url(../blocks/root/root.css);
 @import url(../mix/show.css);
+@import url(../mix/rotation.css);
+
 
 /* импорт основных блоков */
 @import url(../blocks/description/description.css);
